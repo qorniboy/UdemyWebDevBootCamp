@@ -1,0 +1,17 @@
+/* YOUR CODE GOES IN HERE */
+.card{
+    width: 210px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: gray;
+    text-align:center;
+}
+
+img{
+    width:200px;
+    border-radius:50%;
+    border-width:5px;
+    border-style:solid;
+    border-color:rgb(236,183,191);
+}
