@@ -12,3 +12,26 @@ h1 {
     border: 5px solid #003049;
 }
 
+/* @media (min-width: 600px ) and (max-width: 800px){
+    h1{
+        color: purple;
+    }
+} */
+
+@media (max-width: 1500px){
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (max-width: 1000px){
+    h1 {
+        color: orange;
+    }
+}
+
+@media (max-width: 500px){
+    h1 {
+        color: red;
+    }
+}
