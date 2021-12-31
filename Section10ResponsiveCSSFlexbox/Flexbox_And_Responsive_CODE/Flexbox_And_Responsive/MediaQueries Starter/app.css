@@ -16,5 +16,26 @@ ul,li {
     padding: 0;
 }
 
+@media (min-width: 500px){
+    h1 {
+        color: orange;
+    }
+}
 
+@media (min-width: 1000px){
+    h1 {
+        color: yellow;
+    }
+}
 
+@media (min-width: 1500px){
+    h1 {
+        color: green;
+    }
+}
+
+@media (orientation: landscape){
+    h1 {
+        background-color: magenta;
+    }
+}
