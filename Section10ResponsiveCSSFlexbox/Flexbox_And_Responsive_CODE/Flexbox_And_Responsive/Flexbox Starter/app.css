@@ -18,20 +18,3 @@ h1 {
     }
 } */
 
-@media (max-width: 1500px){
-    h1 {
-        color: yellow;
-    }
-}
-
-@media (max-width: 1000px){
-    h1 {
-        color: orange;
-    }
-}
-
-@media (max-width: 500px){
-    h1 {
-        color: red;
-    }
-}
