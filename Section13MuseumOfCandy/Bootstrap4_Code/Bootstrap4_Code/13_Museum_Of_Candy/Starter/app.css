@@ -3,6 +3,23 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
+.home-text h2{
+  color: #ea1c2c;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.home-text p{
+  color: #f488e8;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.home-content{
+  margin-top: 100px;
+}
+
 #mainNavbar{
   font-weight: 100;
   font-size: 1.5rem;
