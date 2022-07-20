@@ -2,7 +2,12 @@ const express = require("express");
 const app = express();
 const path = require('path');
 
+app.use(express.static("public"));
+
+const subredditData = require("./data.json")
+
 app.set("view engine", "ejs");
+
 //below line used for calling nodemon / node outside of index.js directory
 //example : node folder/index.js
 app.set("views", path.join(__dirname, "/views"));
@@ -18,7 +23,13 @@ app.get("/random", (req, res) => {
 
 app.get("/r/:subreddit", (req, res) => {
     const { subreddit } = req.params;
-    res.render("subreddit.ejs", { subreddit });
+    const data = subredditData[subreddit];
+    if (data){
+        res.render("subreddit.ejs", { ...data });
+    }
+    else{
+        res.render("notfound.ejs", { subreddit })
+    }
 });
 
 app.listen(80, ()=> {

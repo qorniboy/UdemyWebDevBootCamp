@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= subreddit %> </title>
+    <title><%= name %></title>
+    <link rel="stylesheet" href="/app.css">
 </head>
 <body>
-    <h1>Browsing Subreddit <%= subreddit %> </h1>
+    <h1>Welcome to the <%= name %> Subreddit </h1>
+    <h2><%= description %> </h2>
+    <p><%= subscribers %> Total Subscribers </p>
+    <hr>
+
+    <% for ( let post of posts ){ %> 
+        <article>
+            <h3><%= post.title %> <i>author: <%= post.author %> </i> </h3>
+            <% if (post.img){ %>
+                <img src= <%= post.img %> alt="">
+            <% } %>  
+        </article>
+    <% } %>  
+
 </body>
 </html>
